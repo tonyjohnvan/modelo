@@ -118,9 +118,43 @@ $(function () {
 
 function GIFverticalFit() {
     if ($(window).width() > 1163 && $(window).height() < 672) {
-        $(".jsImgFixSide").height() > $(window).height() * 0.7 ?
-            $(".jsImgFixSide").height($(window).height() * 0.705) : $(".jsImgFixSide").css({ 'height': '90%', 'width': 'auto'});
-        $(".jsImgFixVert").height() > $(window).height() * 0.5 ?
-            $(".jsImgFixVert").height($(window).height() * 0.505).css('width', 'auto') : $(".jsImgFixVert").height($(window).height() * 0.7).css({'width': '90%', 'height': 'auto'});
+        $(".jsImgFixSide").height() > $(window).height() * 0.6 ?
+            $(".jsImgFixSide")
+                .height($(window).height() * 0.605)
+            : $(".jsImgFixSide")
+            .css({
+                'height': '90%',
+                'width': 'auto'
+            });
+        $(".jsImgFixVert").height() > $(window).height() * 0.45 ?
+            $(".jsImgFixVert")
+                .height($(window).height() * 0.455)
+                .css('width', 'auto')
+            : $(".jsImgFixVert")
+            .height($(window).height() * 0.7)
+            .css({
+                'width': '90%',
+                'height': 'auto'
+            });
+    } else if ($(window).width() > 959 && $(window).height() < 500){
+        $(".jsImgFixSide").height() > $(window).height() * 0.45 ?
+            $(".jsImgFixSide")
+                .height($(window).height() * 0.455)
+                .css('width', 'initial')
+            : $(".jsImgFixSide")
+            .css({
+                'height': '90%',
+                'width': 'auto'
+            });
+        $(".jsImgFixVert").height() > $(window).height() * 0.45 ?
+            $(".jsImgFixVert")
+                .height($(window).height() * 0.455)
+                .css('width', 'initial')
+            : $(".jsImgFixVert")
+            .height($(window).height() * 0.7)
+            .css({
+                'width': '90%',
+                'height': 'auto'
+            });
     }
 }
