@@ -14,7 +14,7 @@
 
 body,html{
     font-family: AvenirNextLTPro;
-    /*height: 100%;*/
+    height: 100%;
     overflow-x: hidden;
 }
 .container{
@@ -91,13 +91,13 @@ body,html{
 }
 
 .modelo-full-height{
-    /*height: 100%;*/
+    height: 100%;
     width: 100%;
     padding: 0;
 }
 
 .modelo-welcome{
-    height: 100%;
+
     box-sizing: border-box;
     background: url(../img/BG@2x.png) center center no-repeat;
     /*background-size: 100% auto;*/
@@ -142,7 +142,7 @@ body,html{
 }
 
 .modelo-slide-wrap{
-    /*height: 100%;*/
+    height: 100%;
 }
 .modelo-hero-center h1{
     font-family: AvenirNextLTProDemi;
@@ -190,27 +190,27 @@ body,html{
     color: #333333;
 }
 .full-height{
-    /*height: 100%;*/
+    height: 100%;
 }
 .pic-slide-1{
     background: url(../img/3dcomment.gif) no-repeat;
-    /*height: 100%;*/
+    height: 100%;
     background-size: auto 100% ;
 }
 .pic-slide-2{
     background: url(../img/shareview.gif) center center no-repeat;
-    /*height: 100%;*/
+    height: 100%;
     width: 100%;
     background-size: auto 100%;
 }
 .pic-slide-3{
     background: url(../img/path.gif) no-repeat;
-    /*height: 100%;*/
+    height: 100%;
     background-size: auto 100% ;
 }
 .pic-slide-4{
     background: url(../img/embed.gif) center center no-repeat;
-    /*height: 100%;*/
+    height: 100%;
     width: 100%;
     background-size: auto 100%;
 }
@@ -307,12 +307,12 @@ body,html{
 .vertical-content{
     display: table;
     width: 100%;
-    /*height: 100%;*/
+    height: 100%;
     text-align: center;
 }
 .vertical-text{
     display: table-cell;
-    /*height: 100%;*/
+    height: 100%;
     vertical-align: middle;
 }
 
@@ -382,10 +382,4 @@ nav.modelo .container{
 .modeloInputGroup button{
     cursor: pointer;
     padding: 0 10px 0;
-}
-.col-lg-3.modelo-slide-wrap{
-    height: 100%;
-}
-.col-lg-7.full-height{
-    height: 100%;
 }

@@ -267,18 +267,8 @@
 /* ==============================
    Max Height 672
    ============================== */
-@media only screen and (max-height: 600px) {
-    #footer {
-        padding: 24px 10px;
-    }
-}
-
-
-/* ==============================
-   Max Height 400
-   ============================== */
 @media only screen and (max-height: 672px) {
-    .modelo-slide-text-wrap h1{
-        font-size: 45px;
+    .col-lg-3.modelo-slide-wrap{
+        margin-top: 16%;
     }
 }

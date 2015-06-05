@@ -76,85 +76,51 @@ $(function () {
         direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
     });
 
-    $(window).on('resize', function () {
+//    $(window).on('resize', function () {
 //        setTimeout(function () {
 //        }, 500);
-            GIFverticalFit();
-    });
-    jQuery(window).bind('orientationchange', function (e) {
+//    });
+    jQuery(window).bind('orientationchange', function(e) {
 
-            switch (window.orientation) {
+        switch ( window.orientation ) {
 
-                case 0:
-                {
-                    $('#viewport').attr('content', 'width=device-width, initial-scale = 1.0, user-scalable = no');
-                    location.reload();
-                }
-                    break;
-
-                case 90:
-                {
-                    $('#viewport').attr('content', 'initial-scale = 0.5, user-scalable = no');
-                    GIFverticalFit();
-                }
-                    break;
-
-                case -90:
-                {
-                    $('#viewport').attr('content', 'initial-scale = 0.5, user-scalable = no');
-                    GIFverticalFit();
-                }
-                    break;
-                default :
-                {
-                    $('#viewport').attr('content', 'width=device-width, initial-scale = 1.0, user-scalable = no');
-                    location.reload();
-                    GIFverticalFit();
-                }
-                    break;
+            case 0:
+            {
+                $('#viewport').attr('content','width=device-width, initial-scale = 1.0, user-scalable = no');
+                location.reload();
             }
+                break;
+
+            case 90:
+            {
+                $('#viewport').attr('content','initial-scale = 0.5, user-scalable = no');
+                GIFverticalFit();
+            }
+                break;
+
+            case -90:
+            {
+                $('#viewport').attr('content','initial-scale = 0.5, user-scalable = no');
+                GIFverticalFit();
+            }
+                break;
+            default :
+            {
+                $('#viewport').attr('content','width=device-width, initial-scale = 1.0, user-scalable = no');
+                location.reload();
+                GIFverticalFit();
+            }
+                break;
+        }
+
     });
 });
 
 function GIFverticalFit() {
-    if ($(window).width() > 1163 && $(window).height() < 672) {
-        $(".jsImgFixSide").height() > $(window).height() * 0.6 ?
-            $(".jsImgFixSide")
-                .height($(window).height() * 0.605)
-            : $(".jsImgFixSide")
-            .css({
-                'height': '90%',
-                'width': 'auto'
-            });
-        $(".jsImgFixVert").height() > $(window).height() * 0.45 ?
-            $(".jsImgFixVert")
-                .height($(window).height() * 0.455)
-                .css('width', 'auto')
-            : $(".jsImgFixVert")
-            .height($(window).height() * 0.7)
-            .css({
-                'width': '90%',
-                'height': 'auto'
-            });
-    } else if ($(window).width() > 959 && $(window).height() < 500){
-        $(".jsImgFixSide").height() > $(window).height() * 0.45 ?
-            $(".jsImgFixSide")
-                .height($(window).height() * 0.455)
-                .css('width', 'initial')
-            : $(".jsImgFixSide")
-            .css({
-                'height': '90%',
-                'width': 'auto'
-            });
-        $(".jsImgFixVert").height() > $(window).height() * 0.45 ?
-            $(".jsImgFixVert")
-                .height($(window).height() * 0.455)
-                .css('width', 'initial')
-            : $(".jsImgFixVert")
-            .height($(window).height() * 0.7)
-            .css({
-                'width': '90%',
-                'height': 'auto'
-            });
+    if ($(window).width() > 1163) {
+        $(".jsImgFixSide").height() > $(window).height() * 0.9 ?
+            $(".jsImgFixSide").height($(window).height() * 0.905) : $(".jsImgFixSide").css({ 'height': '90%', 'width': 'auto'});
+        $(".jsImgFixVert").height() > $(window).height() * 0.7 ?
+            $(".jsImgFixVert").height($(window).height() * 0.705).css('width', 'auto') : $(".jsImgFixVert").height($(window).height() * 0.7).css({'width': '90%', 'height': 'auto'});
     }
 }
