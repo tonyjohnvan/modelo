@@ -118,9 +118,9 @@ $(function () {
 
 function GIFverticalFit() {
     if ($(window).width() > 1163 && $(window).height() < 672) {
-        $(".jsImgFixSide").height() > $(window).height() * 0.8 ?
-            $(".jsImgFixSide").height($(window).height() * 0.805) : $(".jsImgFixSide").css({ 'height': '90%', 'width': 'auto'});
-        $(".jsImgFixVert").height() > $(window).height() * 0.6 ?
-            $(".jsImgFixVert").height($(window).height() * 0.605).css('width', 'auto') : $(".jsImgFixVert").height($(window).height() * 0.7).css({'width': '90%', 'height': 'auto'});
+        $(".jsImgFixSide").height() > $(window).height() * 0.7 ?
+            $(".jsImgFixSide").height($(window).height() * 0.705) : $(".jsImgFixSide").css({ 'height': '90%', 'width': 'auto'});
+        $(".jsImgFixVert").height() > $(window).height() * 0.5 ?
+            $(".jsImgFixVert").height($(window).height() * 0.505).css('width', 'auto') : $(".jsImgFixVert").height($(window).height() * 0.7).css({'width': '90%', 'height': 'auto'});
     }
 }
